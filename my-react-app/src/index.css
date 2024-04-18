@@ -127,6 +127,7 @@ main h2 {
 #examples menu button:hover {
   background-color: #341753;
   color: #ebe7ef;
+  border-radius: 2%;
 }
 
 #examples menu button.active {
