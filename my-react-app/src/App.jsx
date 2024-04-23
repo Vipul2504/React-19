@@ -11,7 +11,7 @@ function Header() {
       <h1>React Essentials</h1>
       <p>
         {reactDecription[getRandom(2)]} React concepts you will need for almost any app you are
-        going to build!
+        going to build
       </p>
     </header>
   );
