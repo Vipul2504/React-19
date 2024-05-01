@@ -12,7 +12,7 @@ function Header() {
       <h1>React</h1>D
       <p>
         {reactDecription[getRandom(2)]} React concepts you will need for almost any app you are
-        going to build
+        
       </p>
     </header>
   );
