@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-      <h1>React Essentials</h1>D
+      <h1>Essentials</h1>D
       <h1>React</h1>D
       <p>
         {reactDecription[getRandom(2)]} React concepts you will need for almost any app you are
