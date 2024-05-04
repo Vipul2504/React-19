@@ -121,6 +121,7 @@ main h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
   cursor: pointer;
+  border-color: #03d5ff;
   transition: all 0.2s ease-in-out;
 }
 
