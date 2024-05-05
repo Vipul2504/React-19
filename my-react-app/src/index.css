@@ -134,6 +134,7 @@ main h2 {
 #examples menu button.active {
   background-color: #7925d3;
   color: #ebe7ef;
+  border: #7925d3;
 }
 
 #tab-content {
