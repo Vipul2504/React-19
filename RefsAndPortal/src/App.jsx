@@ -4,7 +4,6 @@ function App() {
   return (
     <>
       <Player />
-      <Player />
       <div id="challenges"></div>
     </>
   );
