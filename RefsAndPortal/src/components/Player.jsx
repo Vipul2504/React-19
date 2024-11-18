@@ -9,7 +9,7 @@ export default function Player() {
   };
   return (
     <section id="player">
-      <h2>Welcome {enteredPlayerName ?? " "}</h2>
+      <h2>Welcome {enteredPlayerName ?? ""}</h2>
       <p>
         <input type="text" ref={playerName} />
         <button onClick={handleClick}>Set Name</button>
