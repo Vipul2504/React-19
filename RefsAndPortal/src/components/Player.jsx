@@ -11,7 +11,7 @@ export default function Player() {
     <section id="player">
       <h2>Welcome {enteredPlayerName ?? ""}</h2>
       <p>
-        <input type="text" ref={playerName} />
+        <input className="inputclass" type="text" ref={playerName} />
         <button onClick={handleClick}>Set Name</button>
       </p>
     </section>
