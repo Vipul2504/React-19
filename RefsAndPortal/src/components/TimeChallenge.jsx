@@ -35,7 +35,7 @@ const TimeChallenge = ({ title, targetTime }) => {
           </button>
         </p>
         <p className={timeStarted ? "active" : undefined}>
-          {timeStarted ? "Time is running" : "Timer inactive"}
+          {timeStarted ? "Time is running..." : "Timer inactive"}
         </p>
       </section>
     </>
