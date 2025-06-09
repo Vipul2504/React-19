@@ -7,10 +7,38 @@ function App() {
     selectedProjectId: undefined,
     projects: [],
   };
+
+  function handleStartAddProject() {
+    setProjectState((prevState) => {
+      return {
+        ...prevState,
+        selectedProjectId: null,
+      };
+    });
+  }
+
+  function handleProject(projectData) {
+    setProjectState((prevState) => {
+      const newProject = {
+        ...projectData,
+        id: Math.random(),
+      };
+      return {
+        ...prevState,
+        projects: [...prevState.projects, newProject],
+      };
+    });
+  }
+
+  if (projectState.selectedProjectId === null) {
+    content = <NewProject onAdd={handleProject} />;
+  } else if (projectState.selectedProjectId === undefined) {
+    content = <NoProjectSelected onStartAddProject={handleStartAddProject} />;
+  }
   return (
     <main className="h-screen my-8 flex gap-8">
-      <ProjectSidebar />
-      <NoProjectSelected />
+      <ProjectSidebar onStartAddProject={handleStartAddProject} />
+      {content}
     </main>
   );
 }
