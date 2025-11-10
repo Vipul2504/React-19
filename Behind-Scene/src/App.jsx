@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import Counter from './components/Counter/Counter.jsx';
-import Header from './components/Header.jsx';
-import { log } from './log.js';
+import Counter from "./components/Counter/Counter.jsx";
+import Header from "./components/Header.jsx";
+import { log } from "./log.js";
 
 function App() {
-  log('<App /> rendered');
+  log("<App /> rendered");
 
   const [enteredNumber, setEnteredNumber] = useState(0);
   const [chosenCount, setChosenCount] = useState(0);
@@ -17,6 +17,7 @@ function App() {
   function handleSetClick() {
     setChosenCount(enteredNumber);
     setEnteredNumber(0);
+    console.log(setChosenCount);
   }
 
   return (
