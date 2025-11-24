@@ -16,30 +16,34 @@ export default function Signup() {
     const terms = formData.get("terms");
     const acquisitionChannel = formData.getAll("acquisition");
 
-    let error = [];
+    let errorArr = [];
 
     if (!isEmail(email)) {
-      error.push("Enter a valid email");
+      Arr.push("Enter a valid email");
     }
     if (!isEqualToOtherValue(password, confirmPassword)) {
-      error.push("Password does not match");
+      errorArr.push("Password does not match");
     }
     if (!isNotEmpty(password) || !hasMinLength(password, 6)) {
-      error.push("required password length is to small");
+      errorArr.push("required password length is to small");
     }
     if (!isNotEmpty(firstName) || isNotEmpty(lastName)) {
-      error.push("enter both first and last name");
+      errorArr.push("enter both first and last name");
     }
     if (!isNotEmpty(role)) {
-      error.push("provide role");
+      errorArr.push("provide role");
     }
     if (!terms) {
-      error.push("do agree");
+      errorArr.push("do agree");
     }
     if (acquisitionChannel == 0) {
-      error.push("select one channel");
+      errorArr.push("select one channel");
+    }
+    if (errorArr.length > 0) {
+      return { errorArr };
     }
   }
+
   return (
     <form action={signUp}>
       <h2>Welcome on board!</h2>
