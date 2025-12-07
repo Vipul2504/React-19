@@ -1,0 +1,16 @@
+const { createSlice } = require("@reduxjs/toolkit");
+
+const uiSlice = createSlice({
+  name: "ui",
+  initialState: { cartIsVisible: false },
+  reducers: {
+    toggle(state) {
+      console.log("TOGGLE CALLED ✅");
+      state.cartIsVisible = !state.cartIsVisible;
+    },
+  },
+});
+
+export const uiAction = uiSlice.actions;
+
+export default uiSlice;
