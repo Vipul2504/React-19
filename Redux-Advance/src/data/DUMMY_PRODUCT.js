@@ -1,0 +1,123 @@
+export const DUMMY_PRODUCTS = [
+  {
+    id: "p1",
+    price: 30,
+    title: "Wireless Mouse",
+    description: "Smooth wireless mouse for everyday use.",
+  },
+  {
+    id: "p2",
+    price: 60,
+    title: "Mechanical Keyboard",
+    description: "Backlit mechanical keyboard with tactile switches.",
+  },
+  {
+    id: "p3",
+    price: 200,
+    title: "Noise Cancelling Headphones",
+    description: "Over-ear headphones with active noise cancellation.",
+  },
+  {
+    id: "p4",
+    price: 40,
+    title: "USB-C Hub",
+    description: "7-in-1 USB-C hub with HDMI and fast data transfer.",
+  },
+  {
+    id: "p5",
+    price: 500,
+    title: "Smart Watch",
+    description: "Fitness-focused smart watch with heart rate tracking.",
+  },
+  {
+    id: "p6",
+    price: 15,
+    title: "Bluetooth Speaker",
+    description: "Portable speaker with deep bass and long battery life.",
+  },
+  {
+    id: "p7",
+    price: 90,
+    title: "HD Webcam",
+    description: "1080p webcam for streaming and video calls.",
+  },
+  {
+    id: "p8",
+    price: 250,
+    title: "Gaming Chair",
+    description: "Comfortable gaming chair with lumbar support.",
+  },
+  {
+    id: "p9",
+    price: 20,
+    title: "Laptop Stand",
+    description: "Adjustable aluminum stand for better posture.",
+  },
+  {
+    id: "p10",
+    price: 10,
+    title: "USB Flash Drive 64GB",
+    description: "High-speed 64GB USB 3.0 pen drive.",
+  },
+
+  {
+    id: "p11",
+    price: 130,
+    title: "External Hard Drive 1TB",
+    description: "Portable 1TB drive for backups and storage.",
+  },
+  {
+    id: "p12",
+    price: 25,
+    title: "Wireless Charger",
+    description: "Fast wireless charging pad for smartphones.",
+  },
+  {
+    id: "p13",
+    price: 350,
+    title: "10-inch Tablet",
+    description: "Lightweight tablet with HD display.",
+  },
+  {
+    id: "p14",
+    price: 80,
+    title: "Power Bank 20000mAh",
+    description: "High-capacity power bank with fast charging.",
+  },
+  {
+    id: "p15",
+    price: 16,
+    title: "LED Desk Lamp",
+    description: "Adjustable desk lamp with touch controls.",
+  },
+  {
+    id: "p16",
+    price: 700,
+    title: "Smartphone",
+    description: "Latest smartphone with high-performance camera.",
+  },
+  {
+    id: "p17",
+    price: 190,
+    title: "Wireless Earbuds",
+    description: "True wireless earbuds with noise isolation.",
+  },
+  {
+    id: "p18",
+    price: 45,
+    title: "Backpack",
+    description: "Water-resistant backpack for travel and laptops.",
+  },
+  {
+    id: "p19",
+    price: 110,
+    title: "WiFi 6 Router",
+    description: "High-speed WiFi 6 router for stable connection.",
+  },
+  {
+    id: "p20",
+    price: 23,
+    title: "Phone Tripod",
+    description: "Flexible tripod for phones and small cameras.",
+  },
+];
