@@ -11,10 +11,12 @@ import EditEventPage from "./pages/EditEventPage";
 import EventPage, { loader } from "./pages/EventPage";
 import HomePage from "./pages/HomePage";
 import EventRoot from "./pages/EventRoot";
+import Error from "./pages/Error";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <Error />,
     children: [
       { index: true, element: <HomePage /> },
       {

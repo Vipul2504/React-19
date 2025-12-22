@@ -1,13 +1,19 @@
 import { useParams } from "react-router";
+import EventItem from "../components/EventItem";
 
 const EventDetailPage = () => {
   const param = useParams();
   return (
     <>
-      <h1>Event Detail Page</h1>
-      <p>current event :{param.eventId} </p>
+      <EventItem event={event.id} />
     </>
   );
 };
 
 export default EventDetailPage;
+
+export async function loader({ request, params }) {
+  const id = params.eventId;
+
+  fetch("http://localhost:8080/events/" + id);
+}
