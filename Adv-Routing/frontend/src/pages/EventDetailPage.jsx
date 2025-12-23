@@ -14,6 +14,7 @@ export default EventDetailPage;
 
 export async function loader({ request, params }) {
   const id = params.eventId;
+  const req = request.eventId;
 
   fetch("http://localhost:8080/events/" + id);
 }
