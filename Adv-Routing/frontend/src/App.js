@@ -16,6 +16,7 @@ import EventPage, { loader } from "./pages/EventPage";
 import HomePage from "./pages/HomePage";
 import EventRoot from "./pages/EventRoot";
 import Error from "./pages/Error";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,13 +25,13 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       {
-        path: "event",
+        path: "events",
         element: <EventRoot />,
         children: [
           {
-            path: "",
+            index: true,
             element: <EventPage />,
-            loader: loader,
+            loader: eventsLoader,
           },
           {
             path: ":eventId",
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
               {
                 index: true,
                 element: <EventDetailPage />,
-                action: manipulateEventAction,
+                action: deleteEventAction,
               },
               {
                 path: "edit",
@@ -49,15 +50,20 @@ const router = createBrowserRouter([
               },
             ],
           },
-          { path: "new", element: <NewEventPage />, action: newEventAction },
+          {
+            path: "new",
+            element: <NewEventPage />,
+            action: manipulateEventAction,
+          },
         ],
+      },
+      {
+        path: "newsletter",
+        element: <NewsletterPage />,
+        action: newsletterAction,
       },
     ],
   },
 ]);
-
-function App() {
-  return <RouterProvider router={router}></RouterProvider>;
-}
 
 export default App;
